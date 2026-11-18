@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>З днем народження, тьотю Оксано!</title>
+<meta name="description" content="Святкова листівка для тьоті Оксани від Ярослава">
+<meta property="og:type" content="website">
+<meta property="og:title" content="З днем народження, тьотю Оксано!">
+<meta property="og:description" content="Відкрийте — тут листівка для Вас">
+<meta property="og:image" content="https://yarik547.github.io/oksana-birthday/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#11201B">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/yeseva-one-cyrillic-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/lora-cyrillic-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+  @font-face{font-family:"Yeseva One";font-style:normal;font-weight:400;font-display:swap;
+    src:url(fonts/yeseva-one-cyrillic-400-normal.woff2) format("woff2");
+    unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+  @font-face{font-family:"Yeseva One";font-style:normal;font-weight:400;font-display:swap;
+    src:url(fonts/yeseva-one-latin-400-normal.woff2) format("woff2");
+    unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2212,U+FEFF,U+FFFD}
+  @font-face{font-family:"Lora";font-style:normal;font-weight:400;font-display:swap;
+    src:url(fonts/lora-cyrillic-400-normal.woff2) format("woff2");
+    unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+  @font-face{font-family:"Lora";font-style:normal;font-weight:400;font-display:swap;
+    src:url(fonts/lora-latin-400-normal.woff2) format("woff2");
+    unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2212,U+FEFF,U+FFFD}
+  @font-face{font-family:"Lora";font-style:italic;font-weight:400;font-display:swap;
+    src:url(fonts/lora-cyrillic-400-italic.woff2) format("woff2");
+    unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+  @font-face{font-family:"Lora";font-style:italic;font-weight:400;font-display:swap;
+    src:url(fonts/lora-latin-400-italic.woff2) format("woff2");
+    unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2212,U+FEFF,U+FFFD}
+  @font-face{font-family:"Lora";font-style:normal;font-weight:600;font-display:swap;
+    src:url(fonts/lora-cyrillic-600-normal.woff2) format("woff2");
+    unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+  @font-face{font-family:"Lora";font-style:normal;font-weight:600;font-display:swap;
+    src:url(fonts/lora-latin-600-normal.woff2) format("woff2");
+    unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2212,U+FEFF,U+FFFD}
+
+  :root{
+    --lacquer:#11201B;      /* чорний лак петриківської скриньки, з зеленим відтінком */
+    --lacquer-hi:#1F382F;   /* відблиск лаку */
+    --kalyna:#D9262F;       /* ягода калини */
+    --sunflower:#F3B531;    /* соняшник */
+    --leaf:#4F9B3B;         /* листя */
+    --cornflower:#4C78E0;   /* волошка */
+    --milk:#F6EEDF;         /* текст */
+    --milk-soft:rgba(246,238,223,.74);
+    --display:"Yeseva One", Georgia, serif;
+    --text:"Lora", Georgia, serif;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;min-height:100svh;color:var(--milk);font-family:var(--text);
+    font-size:clamp(17px, 1.1vw + 12px, 20px);line-height:1.7;
+    background:
+      radial-gradient(130% 60% at 50% -8%, var(--lacquer-hi) 0%, rgba(31,56,47,0) 62%),
+      radial-gradient(90% 50% at 50% 108%, #18302A 0%, rgba(24,48,42,0) 70%),
+      var(--lacquer);
+    background-attachment:fixed;
+    -webkit-font-smoothing:antialiased;
+  }
+  button{font:inherit;color:inherit}
+  :focus-visible{outline:3px solid var(--sunflower);outline-offset:4px;border-radius:6px}
+
+  /* ——— Вінок ——— */
+  .hero{min-height:100svh;display:grid;place-items:center;padding:24px 10px 88px;position:relative}
+  .wreath{position:relative;width:min(96vw, 82svh, 600px);aspect-ratio:1}
+  .wreath svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+  .center{position:absolute;inset:0;display:grid;place-items:center;text-align:center}
+  .center > *{grid-area:1/1}
+
+  .cover{display:grid;justify-items:center;gap:18px;transition:opacity .35s ease, transform .35s ease}
+  .cover p{margin:0;font-style:italic;color:var(--milk-soft);font-size:1.05em}
+  .open-btn{
+    appearance:none;border:0;cursor:pointer;
+    background:var(--sunflower);color:#2A1A06;font-weight:600;font-size:1.02em;
+    padding:.8em 1.5em;border-radius:999px;
+    box-shadow:0 0 0 6px rgba(243,181,49,.16);
+    transition:transform .2s ease, box-shadow .2s ease;
+  }
+  .open-btn:hover{transform:translateY(-1px);box-shadow:0 0 0 9px rgba(243,181,49,.2)}
+  .open-btn:active{transform:scale(.97)}
+
+  .greet{margin:0;font-weight:400;line-height:1.05;opacity:0;transform:translateY(8px);pointer-events:none;
+    transition:opacity .9s ease 1.25s, transform .9s ease 1.25s}
+  .greet .l1{display:block;font-family:var(--text);font-style:italic;font-size:clamp(15px, 3.6vw, 24px);color:var(--milk-soft);margin-bottom:.35em}
+  .greet .l2{display:block;font-family:var(--text);font-style:italic;font-size:clamp(17px, 4.2vw, 28px);margin-bottom:.12em}
+  .greet .l3{display:block;font-family:var(--display);font-size:clamp(38px, 11.5vw, 76px);letter-spacing:.005em}
+
+  body.opened .cover{opacity:0;transform:scale(.96);pointer-events:none}
+  body.opened .greet{opacity:1;transform:none}
+
+  /* мазки пензля */
+  .grow{opacity:0;transform:scale(0);transform-box:view-box;transform-origin:0 0}
+  body.opened .grow{animation:paint .6s cubic-bezier(.2,.85,.3,1.2) forwards;animation-delay:var(--d,0s)}
+  @keyframes paint{0%{opacity:0;transform:scale(0)}35%{opacity:1}100%{opacity:1;transform:scale(1)}}
+  .stem{fill:none;stroke:#3C7D30;stroke-width:3.2;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1}
+  body.opened .stem{animation:draw 1.7s cubic-bezier(.45,.05,.3,1) .15s forwards}
+  @keyframes draw{to{stroke-dashoffset:0}}
+  .ghost{fill:none;stroke:rgba(246,238,223,.22);stroke-width:1.6;stroke-dasharray:1.5 9;stroke-linecap:round;transition:opacity .6s ease}
+  body.opened .ghost{opacity:0}
+
+  .read-btn{
+    position:absolute;left:50%;bottom:22px;translate:-50% 0;
+    appearance:none;background:none;border:0;cursor:pointer;
+    display:grid;justify-items:center;gap:2px;padding:8px 14px;
+    color:var(--milk-soft);font-style:italic;font-size:.95em;
+    opacity:0;pointer-events:none;transition:opacity .8s ease 2.6s;
+  }
+  .read-btn svg{width:18px;height:18px}
+  body.opened .read-btn{opacity:1;pointer-events:auto}
+
+  /* ——— Лист ——— */
+  .letter{display:none;width:min(100%, 36rem);margin:0 auto;padding:12px 24px 72px}
+  body.opened .letter{display:block}
+  .letter p{margin:0 0 1.15em;text-wrap:pretty}
+  .sprig{display:block;width:120px;height:40px;margin:2.4em auto 2.2em}
+
+  .candles{text-align:center}
+  .candles h2{font-family:var(--display);font-weight:400;font-size:clamp(26px, 6.5vw, 36px);line-height:1.15;margin:0 0 .25em}
+  .candles .hint{color:var(--milk-soft);font-style:italic;margin:0 0 1.4em;min-height:1.7em}
+  .row{display:flex;justify-content:center;align-items:flex-end;gap:clamp(14px, 5vw, 30px);padding-bottom:10px;border-bottom:2px solid rgba(246,238,223,.18);width:min(100%, 300px);margin:0 auto}
+  .candle{appearance:none;background:none;border:0;padding:0;cursor:pointer;width:54px;-webkit-tap-highlight-color:transparent}
+  .candle svg{display:block;width:100%;height:auto;overflow:visible}
+  .flame{transform-box:fill-box;transform-origin:50% 100%;animation:flicker 1.6s ease-in-out infinite alternate}
+  .candle:nth-child(2) .flame{animation-duration:1.3s}
+  .candle:nth-child(3) .flame{animation-duration:1.9s}
+  @keyframes flicker{0%{transform:scale(1,1) rotate(-2deg)}50%{transform:scale(.94,1.06) rotate(1.5deg)}100%{transform:scale(1.03,.96) rotate(-1deg)}}
+  .candle.out .flame{animation:blow .45s ease forwards}
+  @keyframes blow{to{transform:scale(.2,.1) rotate(25deg);opacity:0}}
+  .smoke{fill:none;stroke:rgba(246,238,223,.55);stroke-width:2;stroke-linecap:round;opacity:0}
+  .candle.out .smoke{animation:smoke 1.6s ease-out .2s forwards}
+  @keyframes smoke{0%{opacity:0;transform:translateY(4px)}25%{opacity:.8}100%{opacity:0;transform:translateY(-26px)}}
+  .candle.out{cursor:default}
+
+  .sign{margin-top:3em !important;line-height:1.35}
+  .sign span{display:block;font-family:var(--display);font-size:1.7em;margin-top:.2em}
+
+  .petals{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:10}
+  .petals svg{position:absolute;top:-40px;animation:fall var(--t) cubic-bezier(.3,.1,.6,1) var(--dl) forwards}
+  @keyframes fall{0%{transform:translate(0,0) rotate(0)}100%{transform:translate(var(--dx), calc(100vh + 80px)) rotate(var(--r))}}
+
+  @media (prefers-reduced-motion: reduce){
+    .grow,.stem,.flame,.smoke{animation:none !important}
+    body.opened .grow{opacity:1;transform:none}
+    body.opened .stem{stroke-dashoffset:0}
+    .greet,.read-btn{transition-delay:0s !important;transition-duration:.2s !important}
+    .candle.out .flame{opacity:0}
+  }
+</style>
+</head>
+<body>
+<main>
+  <section class="hero" aria-label="Листівка">
+    <div class="wreath">
+      <svg id="wreath" viewBox="-300 -300 600 600" aria-hidden="true" focusable="false">
+        <defs>
+          <linearGradient id="gRed" x1="0" y1="1" x2="0" y2="0">
+            <stop offset="0" stop-color="#7E0F1A"/><stop offset=".55" stop-color="#C81F2A"/><stop offset="1" stop-color="#F04A45"/>
+          </linearGradient>
+          <linearGradient id="gPink" x1="0" y1="1" x2="0" y2="0">
+            <stop offset="0" stop-color="#A3203A"/><stop offset="1" stop-color="#F49AA6"/>
+          </linearGradient>
+          <linearGradient id="gSun" x1="0" y1="1" x2="0" y2="0">
+            <stop offset="0" stop-color="#C8661A"/><stop offset="1" stop-color="#FFD860"/>
+          </linearGradient>
+          <linearGradient id="gMilk" x1="0" y1="1" x2="0" y2="0">
+            <stop offset="0" stop-color="#E7B9B0"/><stop offset=".5" stop-color="#FBEFE6"/><stop offset="1" stop-color="#FFFFFF"/>
+          </linearGradient>
+          <linearGradient id="gBlue" x1="0" y1="1" x2="0" y2="0">
+            <stop offset="0" stop-color="#1B3488"/><stop offset="1" stop-color="#6C98F2"/>
+          </linearGradient>
+          <linearGradient id="gLeaf" x1="0" y1="1" x2="0" y2="0">
+            <stop offset="0" stop-color="#245A22"/><stop offset="1" stop-color="#6DB84A"/>
+          </linearGradient>
+          <linearGradient id="gLeaf2" x1="0" y1="1" x2="0" y2="0">
+            <stop offset="0" stop-color="#2F6B26"/><stop offset="1" stop-color="#A9C74A"/>
+          </linearGradient>
+          <radialGradient id="gBerry" cx=".38" cy=".35" r=".7">
+            <stop offset="0" stop-color="#FF6B5E"/><stop offset=".6" stop-color="#D9262F"/><stop offset="1" stop-color="#8A1119"/>
+          </radialGradient>
+          <radialGradient id="gHeart" cx=".5" cy=".45" r=".6">
+            <stop offset="0" stop-color="#FFD860"/><stop offset="1" stop-color="#D98219"/>
+          </radialGradient>
+        </defs>
+        <circle class="ghost" r="228"/>
+        <g id="stems">
+          <path class="stem" pathLength="1" d="M0,-228 A228,228 0 0 1 0,228"/>
+          <path class="stem" pathLength="1" d="M0,-228 A228,228 0 0 0 0,228"/>
+        </g>
+        <g id="leaves"></g>
+        <g id="berries"></g>
+        <g id="flowers"></g>
+      </svg>
+
+      <div class="center">
+        <div class="cover">
+          <p>Для тьоті Оксани</p>
+          <button class="open-btn" id="open" type="button">Відкрити листівку</button>
+        </div>
+        <h1 class="greet">
+          <span class="l1">З днем народження,</span>
+          <span class="l2">тьотю</span>
+          <span class="l3">Оксано!</span>
+        </h1>
+      </div>
+    </div>
+
+    <button class="read-btn" id="read" type="button" tabindex="-1">
+      Читати лист
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 9l7 7 7-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+  </section>
+
+  <article class="letter" id="letter">
+    <p>Сьогодні Ваше свято, і хочеться сказати головне: з Вами завжди тепло. Поруч із Вами легко сміятися, легко говорити, і завжди відчуваєш, що тут на тебе чекають.</p>
+    <p>Бажаю Вам міцного здоров’я — такого, щоб сил вистачало і на справи, і на мрії, і на маленькі радощі без жодного приводу. Мирного неба, спокою в душі й затишку в домі.</p>
+    <p>Хай цей рік буде щедрим на добрі новини, теплі зустрічі й людей, які поруч не з обов’язку, а від щирого серця. Хай усе задумане складається легко, а все, що тривожить, — відпускає.</p>
+    <p>Дякую Вам за доброту, за турботу і за те, що Ви в нас є.</p>
+
+    <svg class="sprig" viewBox="-60 -20 120 40" aria-hidden="true" id="sprig"></svg>
+
+    <section class="candles" aria-labelledby="candles-title">
+      <h2 id="candles-title">Задуйте свічки</h2>
+      <p class="hint" id="hint" aria-live="polite">Торкніться кожного вогника й загадайте бажання</p>
+      <div class="row" id="row"></div>
+    </section>
+
+    <p class="sign">З любов’ю,<span>Ярослав</span></p>
+  </article>
+</main>
+
+<div class="petals" id="petals" aria-hidden="true"></div>
+
+<script>
+(() => {
+  const NS = 'http://www.w3.org/2000/svg';
+  const R = 228;
+  const rad = Math.PI / 180;
+  const el = (tag, attrs = {}, parent) => {
+    const e = document.createElementNS(NS, tag);
+    for (const k in attrs) e.setAttribute(k, attrs[k]);
+    if (parent) parent.appendChild(e);
+    return e;
+  };
+  const f = n => +n.toFixed(2);
+
+  // Зернятко — основний мазок петриківки: тонкий хвостик біля основи, кругла «голівка» на кінці.
+  // Будується вгору від (0,-o) до (0,-(o+L)); k зсуває голівку вбік, щоб мазок був трохи вигнутий.
+  function seed(L, o = 0, w = L * .3, k = 0) {
+    const y = t => f(-(o + L * t));
+    return `M0,${f(-o)}` +
+      `C${f(w*.12)},${y(.22)} ${f(-w*.3 + k*.4)},${y(.45)} ${f(-w*.55 + k*.8)},${y(.62)}` +
+      `C${f(-w*.85 + k)},${y(.82)} ${f(-w*.45 + k)},${y(1)} ${f(w*.06 + k)},${y(1)}` +
+      `C${f(w*.6 + k)},${y(1)} ${f(w*.82 + k)},${y(.8)} ${f(w*.55 + k*.8)},${y(.62)}` +
+      `C${f(w*.32 + k*.4)},${y(.44)} ${f(w*.1)},${y(.2)} 0,${f(-o)}Z`;
+  }
+  function leaf(L, o = 0) {
+    const y = t => f(-(o + L * t));
+    return `M0,${f(-o)}C${f(-L*.24)},${y(.22)} ${f(-L*.28)},${y(.62)} 0,${y(1)}` +
+      `C${f(L*.28)},${y(.62)} ${f(L*.24)},${y(.22)} 0,${f(-o)}Z`;
+  }
+
+  // Один мазок, що «малюється»: зовнішня група ставить на місце, внутрішня росте з основи.
+  function stroke(parent, { x = 0, y = 0, rot = 0, s = 1, d, fill, delay = 0, extra }) {
+    const g = el('g', { transform: `translate(${f(x)} ${f(y)}) rotate(${f(rot)}) scale(${s})` }, parent);
+    const inner = el('g', { class: 'grow' }, g);
+    inner.style.setProperty('--d', delay.toFixed(3) + 's');
+    el('path', { d, fill }, inner);
+    if (extra) extra(inner);
+    return inner;
+  }
+  function blob(parent, { x = 0, y = 0, delay = 0 }, draw) {
+    const g = el('g', { transform: `translate(${f(x)} ${f(y)})` }, parent);
+    const inner = el('g', { class: 'grow' }, g);
+    inner.style.setProperty('--d', delay.toFixed(3) + 's');
+    draw(inner);
+    return inner;
+  }
+
+  // Затримка: вінок малюється від верхівки в обидва боки до низу.
+  const fromTop = th => {
+    return Math.abs(((th + 90) % 360 + 540) % 360 - 180); // 0 зверху … 180 знизу
+  };
+  const timeAt = th => .2 + fromTop(th) / 180 * 1.5;
+  const pos = (th, r = R) => [Math.cos(th * rad) * r, Math.sin(th * rad) * r];
+
+  const leaves = document.getElementById('leaves');
+  const berries = document.getElementById('berries');
+  const flowers = document.getElementById('flowers');
+
+  // ——— Листя вздовж вінка ———
+  const N = 44;
+  for (let i = 0; i < N; i++) {
+    const th = -90 + i * 360 / N + 360 / N / 2;
+    const right = Math.cos(th * rad) >= 0 ? 1 : -1;
+    const t = timeAt(th);
+    const [x, y] = pos(th);
+    // зовнішній листок, нахилений у бік росту вінка
+    stroke(leaves, { x, y, rot: th + 90 + right * 42, s: 1, d: leaf(36 + (i % 3) * 4, 1),
+      fill: i % 2 ? 'url(#gLeaf)' : 'url(#gLeaf2)', delay: t });
+    // внутрішній, коротший
+    stroke(leaves, { x, y, rot: th - 90 - right * 48, s: 1, d: leaf(24 + (i % 2) * 4, 1),
+      fill: i % 2 ? 'url(#gLeaf2)' : 'url(#gLeaf)', delay: t + .06 });
+  }
+  // крапочки-«ґудзики» назовні
+  for (let i = 0; i < 22; i++) {
+    const th = -90 + i * 360 / 22 + 8;
+    const [x, y] = pos(th, R + 52);
+    blob(leaves, { x, y, delay: timeAt(th) + .35 }, g => {
+      el('circle', { r: 3.2, fill: '#F3B531' }, g);
+      el('circle', { cx: 7, cy: 3, r: 2, fill: '#F3B531', opacity: .7 }, g);
+      el('circle', { cx: -6, cy: 4, r: 1.6, fill: '#F6EEDF', opacity: .7 }, g);
+    });
+  }
+
+  // ——— Квіти ———
+  // A — велика червона квітка (як півонія в петриківці)
+  function flowerA(th, S) {
+    const [x, y] = pos(th);
+    const t = timeAt(th) + .22;
+    const g = el('g', { transform: `translate(${f(x)} ${f(y)}) scale(${S})` }, flowers);
+    for (let i = 0; i < 12; i++)
+      stroke(g, { rot: i * 30 + th, d: seed(44, 9, 15, 2), fill: 'url(#gRed)', delay: t + i * .015 });
+    for (let i = 0; i < 12; i++)
+      stroke(g, { rot: i * 30 + 15 + th, d: seed(26, 8, 10, 1.5), fill: 'url(#gSun)', delay: t + .14 + i * .012 });
+    blob(g, { delay: t + .28 }, c => {
+      el('circle', { r: 12.5, fill: '#6E0F17' }, c);
+      for (let j = 0; j < 7; j++) {
+        const a = j * 360 / 7 * rad;
+        el('circle', { cx: f(Math.cos(a) * 6.5), cy: f(Math.sin(a) * 6.5), r: 1.9, fill: '#FFD860' }, c);
+      }
+      el('circle', { r: 2.2, fill: '#FFD860' }, c);
+    });
+  }
+  // B — біла квітка з жовтим серцем (ромашка)
+  function flowerB(th, S) {
+    const [x, y] = pos(th);
+    const t = timeAt(th) + .22;
+    const g = el('g', { transform: `translate(${f(x)} ${f(y)}) scale(${S})` }, flowers);
+    for (let i = 0; i < 16; i++)
+      stroke(g, { rot: i * 22.5 + th, d: seed(34, 11, 9, 0), fill: 'url(#gMilk)', delay: t + i * .012 });
+    blob(g, { delay: t + .24 }, c => {
+      el('circle', { r: 14, fill: 'url(#gHeart)' }, c);
+      for (let j = 0; j < 12; j++) {
+        const a = j * 137.5 * rad, r = 2.8 * Math.sqrt(j + .5);
+        el('circle', { cx: f(Math.cos(a) * r), cy: f(Math.sin(a) * r), r: 1.3, fill: '#8A1119' }, c);
+      }
+    });
+  }
+  // C — тюльпан, дивиться назовні
+  function flowerC(th, S) {
+    const [x, y] = pos(th);
+    const t = timeAt(th) + .2;
+    const rot = th + 90;
+    const g = el('g', { transform: `translate(${f(x)} ${f(y)}) rotate(${f(rot)}) scale(${S})` }, flowers);
+    stroke(g, { rot: -72, d: leaf(30, 2), fill: 'url(#gLeaf)', delay: t });
+    stroke(g, { rot: 72, d: leaf(30, 2), fill: 'url(#gLeaf)', delay: t + .03 });
+    stroke(g, { rot: -26, d: seed(52, 4, 18, -3), fill: 'url(#gPink)', delay: t + .08 });
+    stroke(g, { rot: 26, d: seed(52, 4, 18, 3), fill: 'url(#gPink)', delay: t + .12 });
+    stroke(g, { rot: 0, d: seed(58, 4, 20, 0), fill: 'url(#gRed)', delay: t + .18 });
+    stroke(g, { rot: -9, d: seed(30, 6, 8, -1), fill: 'url(#gSun)', delay: t + .3 });
+    stroke(g, { rot: 9, d: seed(30, 6, 8, 1), fill: 'url(#gSun)', delay: t + .33 });
+  }
+  // D — синій дзвоник-волошка віялом
+  function flowerD(th, S) {
+    const [x, y] = pos(th);
+    const t = timeAt(th) + .2;
+    const g = el('g', { transform: `translate(${f(x)} ${f(y)}) rotate(${f(th + 90)}) scale(${S})` }, flowers);
+    for (let i = 0; i < 7; i++)
+      stroke(g, { rot: -57 + i * 19, d: seed(42, 6, 13, (i - 3) * .8), fill: 'url(#gBlue)', delay: t + i * .02 });
+    for (let i = 0; i < 5; i++)
+      stroke(g, { rot: -36 + i * 18, d: seed(24, 6, 8, 0), fill: 'url(#gMilk)', delay: t + .18 + i * .02 });
+    blob(g, { delay: t + .3 }, c => {
+      el('path', { d: 'M-12,0 A12,12 0 0 1 12,0 Z', fill: '#1B3488' }, c);
+      el('circle', { cy: -4, r: 2.4, fill: '#FFD860' }, c);
+    });
+  }
+  // E — гроно калини
+  function berriesE(th, S) {
+    const [x, y] = pos(th, R + 6);
+    const t = timeAt(th) + .3;
+    const g = el('g', { transform: `translate(${f(x)} ${f(y)}) rotate(${f(th + 90)}) scale(${S})` }, berries);
+    stroke(g, { rot: -64, d: leaf(26, 2), fill: 'url(#gLeaf2)', delay: t - .08 });
+    stroke(g, { rot: 64, d: leaf(26, 2), fill: 'url(#gLeaf)', delay: t - .05 });
+    const pts = [[0,-12,7],[-9,-19,6.5],[8.5,-20,7.2],[-1,-28,7.4],[-15,-29,6.2],[14,-30,6.6],[-7,-37,6.8],[7.5,-38,6.4],[0,-46,5.8]];
+    pts.forEach(([bx, by, r], i) => blob(g, { x: bx, y: by, delay: t + i * .03 }, c => {
+      el('circle', { r, fill: 'url(#gBerry)' }, c);
+      el('circle', { cx: f(-r * .34), cy: f(-r * .34), r: f(r * .24), fill: '#FFFFFF', opacity: .75 }, c);
+    }));
+  }
+
+  // Розкладка: симетрично відносно вертикалі, найбільша квітка зверху.
+  berriesE(-72, .9); berriesE(-108, .9); berriesE(0, .85); berriesE(180, .85);
+  flowerA(-90, 1.12);
+  flowerC(-50, .9);   flowerC(-130, .9);
+  flowerB(-16, .9);   flowerB(-164, .9);
+  flowerD(22, 1.0);   flowerD(158, 1.0);
+  flowerA(56, .92);   flowerA(124, .92);
+  flowerB(90, 1.0);
+
+  // ——— Гілочка-розділювач ———
+  const sprig = document.getElementById('sprig');
+  const sp = (rot, x, d, fill) => {
+    const g = el('g', { transform: `translate(${x} 10) rotate(${rot})` }, sprig);
+    el('path', { d, fill }, g);
+  };
+  sp(-80, -8, leaf(34), 'url(#gLeaf)'); sp(80, 8, leaf(34), 'url(#gLeaf)');
+  sp(-55, -6, leaf(22), 'url(#gLeaf2)'); sp(55, 6, leaf(22), 'url(#gLeaf2)');
+  sp(-14, 0, seed(26, 2, 9, -1), 'url(#gRed)'); sp(14, 0, seed(26, 2, 9, 1), 'url(#gRed)');
+  sp(0, 0, seed(30, 2, 10, 0), 'url(#gSun)');
+  // градієнти живуть у головному SVG — копіюємо defs, щоб гілочка була самодостатньою
+  sprig.prepend(document.querySelector('#wreath defs').cloneNode(true));
+  sprig.querySelectorAll('[id]').forEach(n => n.id = 's-' + n.id);
+  sprig.querySelectorAll('path').forEach(p => {
+    const v = p.getAttribute('fill');
+    if (v && v.startsWith('url(#')) p.setAttribute('fill', v.replace('url(#', 'url(#s-'));
+  });
+
+  // ——— Свічки ———
+  const row = document.getElementById('row');
+  const hint = document.getElementById('hint');
+  const candles = [
+    { body: '#D9262F', orn: '#F6EEDF', h: 112 },
+    { body: '#F3B531', orn: '#D9262F', h: 134 },
+    { body: '#4C78E0', orn: '#F6EEDF', h: 112 },
+  ];
+  let left = candles.length;
+  candles.forEach((c, i) => {
+    const b = document.createElement('button');
+    b.className = 'candle';
+    b.type = 'button';
+    b.setAttribute('aria-label', `Задути свічку ${i + 1}`);
+    const H = c.h, top = 160 - H;
+    b.innerHTML =
+      `<svg viewBox="0 0 54 160">
+        <path class="smoke" d="M27,${top - 8} C21,${top - 18} 33,${top - 26} 27,${top - 36} C22,${top - 44} 30,${top - 50} 28,${top - 58}"/>
+        <path class="flame" d="M27,${top - 4} C17,${top - 10} 19,${top - 26} 27,${top - 40} C35,${top - 26} 37,${top - 10} 27,${top - 4}Z" fill="#FFB52E"/>
+        <path class="flame" d="M27,${top - 6} C22,${top - 10} 23,${top - 19} 27,${top - 27} C31,${top - 19} 32,${top - 10} 27,${top - 6}Z" fill="#FFF1B8"/>
+        <line x1="27" y1="${top}" x2="27" y2="${top - 7}" stroke="#2A1A06" stroke-width="2.4" stroke-linecap="round"/>
+        <rect x="13" y="${top}" width="28" height="${H}" rx="6" fill="${c.body}"/>
+        <g fill="${c.orn}" opacity=".9">
+          <path transform="translate(27 ${top + H * .45}) rotate(-35)" d="${seed(18, 2, 6, -1)}"/>
+          <path transform="translate(27 ${top + H * .45}) rotate(35)" d="${seed(18, 2, 6, 1)}"/>
+          <path transform="translate(27 ${top + H * .45})" d="${seed(22, 2, 7, 0)}"/>
+          <circle cx="27" cy="${top + H * .45 + 9}" r="2.4"/>
+          <circle cx="27" cy="${top + H * .45 + 17}" r="1.8"/>
+        </g>
+      </svg>`;
+    b.addEventListener('click', () => {
+      if (b.classList.contains('out')) return;
+      b.classList.add('out');
+      b.setAttribute('aria-label', `Свічку ${i + 1} задуто`);
+      left--;
+      if (left > 0) {
+        hint.textContent = left === 1 ? 'Ще один вогник' : `Ще ${left} вогники`;
+      } else {
+        hint.textContent = 'Бажання загадано. Хай збудеться!';
+        petalRain();
+      }
+    });
+    row.appendChild(b);
+  });
+
+  // ——— Дощ із пелюсток ———
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)');
+  function petalRain() {
+    if (reduce.matches) return;
+    const box = document.getElementById('petals');
+    const fills = ['#D9262F', '#F3B531', '#F6EEDF', '#4C78E0', '#F49AA6', '#6DB84A'];
+    const d = seed(40, 0, 13, 0);
+    for (let i = 0; i < 54; i++) {
+      const s = document.createElementNS(NS, 'svg');
+      const size = 12 + Math.random() * 16;
+      s.setAttribute('viewBox', '-15 -44 30 46');
+      s.setAttribute('width', f(size * .66));
+      s.setAttribute('height', f(size));
+      s.innerHTML = `<path d="${d}" fill="${fills[i % fills.length]}"/>`;
+      s.style.left = (Math.random() * 100) + 'vw';
+      s.style.setProperty('--t', (3.2 + Math.random() * 2.8).toFixed(2) + 's');
+      s.style.setProperty('--dl', (Math.random() * 1.4).toFixed(2) + 's');
+      s.style.setProperty('--dx', ((Math.random() - .5) * 160).toFixed(0) + 'px');
+      s.style.setProperty('--r', ((Math.random() - .5) * 900).toFixed(0) + 'deg');
+      box.appendChild(s);
+    }
+    setTimeout(() => { box.innerHTML = ''; }, 8000);
+  }
+
+  // ——— Відкриття ———
+  const openBtn = document.getElementById('open');
+  const readBtn = document.getElementById('read');
+  openBtn.addEventListener('click', () => {
+    document.body.classList.add('opened');
+    readBtn.tabIndex = 0;
+  });
+  readBtn.addEventListener('click', () => {
+    document.getElementById('letter').scrollIntoView({ behavior: reduce.matches ? 'auto' : 'smooth', block: 'start' });
+  });
+  if (new URLSearchParams(location.search).has('open')) document.body.classList.add('opened');
+})();
+</script>
+</body>
+</html>
